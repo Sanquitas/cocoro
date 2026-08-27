@@ -24,7 +24,7 @@ body {
     font-weight: bold;
     transform: translate(-50%, -50%);
     white-space: nowrap;
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 30px white;
 }
 
 .letter.visible {
