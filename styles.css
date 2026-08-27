@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#heart-container {
+    position: relative;
+    /* Centro de coordenadas en medio de la pantalla */
+    width: 0;
+    height: 0;
+}
+
+.letter {
+    position: absolute;
+    color: #ffb6c1; /* Color rosa especificado en el script de python */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 10px;
+    font-weight: bold;
+    transform: translate(-50%, -50%); /* Para centrar el texto exactamente en (x,y) */
+    white-space: nowrap;
+    text-shadow: 0 0 2px #ffb6c1; /* Un leve brillo para que resalte más */
+}
+
+.letter.visible {
+    opacity: 1;
+}
